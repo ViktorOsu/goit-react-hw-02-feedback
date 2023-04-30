@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FeedbackOptions } from '../FeedbackOptions/FeedbackOptions';
 import { FeedbackForm, FeedbackWrapper, FeedbackBtn } from './Feedback.styled';
 import { Section } from '../Section/Section';
-// import { Statistics } from '../Statistics/Statistics';
+import { Statistics } from '../Statistics/Statistics';
 
 const feedBackStatusName = ['good', 'neutral', 'bad'];
 
@@ -33,7 +33,7 @@ export class Feedback extends Component {
         <FeedbackWrapper>
           <Section title="Statistics" />
 
-          {/* <Statistics options={feedBackStatusName} state={this.state} /> */}
+          <Statistics options={feedBackStatusName} state={this.state} />
         </FeedbackWrapper>
       </FeedbackForm>
     );
