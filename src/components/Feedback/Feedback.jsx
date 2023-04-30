@@ -41,9 +41,9 @@ export class Feedback extends Component {
 }
 
 Feedback.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-  total: PropTypes.number,
-  positivePercentage: PropTypes.number,
+  state: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }).isRequired,
 };
